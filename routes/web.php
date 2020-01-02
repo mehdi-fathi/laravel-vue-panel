@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    return view('welcome',
+        [
+            'title' => "An even cooler way to do the title by mehdi fathi"
+        ]
+    );
 });
+
