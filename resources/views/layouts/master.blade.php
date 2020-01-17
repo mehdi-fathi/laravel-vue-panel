@@ -47,6 +47,7 @@
 </footer>
 
 @include('panel.sections.footer.scripts')
+<script type="text/javascript" src="js/app-vue/app.js"></script>
 @stack('styles')
 
 </body>
