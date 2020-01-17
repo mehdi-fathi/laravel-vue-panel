@@ -1,76 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
+    @include('panel.sections.head.head')
+    @stack('styles')
 </head>
-<body>
-@section('sidebar')
-    This is the master sidebar.
-@show
 
-<div class="container">
-    @yield('content')
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+
+<header class="app-header navbar">
+    @include('panel.sections.head.header')
+</header>
+
+<div class="app-body">
+
+    <div class="sidebar">
+        @include('panel.sections.side.sidebar')
+    </div>
+
+    <main class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">خانه</li>
+            <li class="breadcrumb-item"><a href="#">ادمین</a></li>
+            <li class="breadcrumb-item active">داشبورد</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu d-md-down-none">
+                <div class="btn-group" role="group" aria-label="دکمه های گروهی">
+                    <a class="btn" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;داشبود</a>
+                    <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;تنظیمات</a>
+                </div>
+            </li>
+        </ol>
+        @yield('content')
+    </main>
+
+    <aside class="aside-menu">
+        @include('panel.sections.side.side-menu')
+    </aside>
+
 </div>
-<script type="text/javascript" src="js/app-vue/app.js"></script>
+
+<footer class="app-footer">
+    @include('panel.sections.footer.footer')
+</footer>
+
+@include('panel.sections.footer.scripts')
+@stack('styles')
+
 </body>
 </html>
