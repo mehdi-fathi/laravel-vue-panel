@@ -2,12 +2,12 @@
 
     <div class="card">
         <div class="card-header">
-            <i class="icon-drop"></i>{{title}}
+            <i :class="titleIcon"></i>{{title}}
         </div>
-        <div class="card-body">
-                <div class="row">
-                    <slot></slot>
-                </div>
+        <div class="card-body ">
+            <div class="row">
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -15,7 +15,16 @@
 <script>
     export default {
         name: "card",
-        props : ['title'],
+        props: {
+            title: {
+                default: 'test',
+                type: String
+            },
+            titleIcon: {
+                default: 'icon-drop',
+                type: String
+            }
+        },
     }
 </script>
 

@@ -132,7 +132,7 @@
             <!--/.row-->
 
             <div class="row">
-                <card :title="'تست'">
+                <card :title="'تست'" :title-icon="'icon-user'">
                     <div class="col-md-4">
                         <div class="p-3 mb-3 bg-primary">اصلی</div>
                     </div>

@@ -36871,7 +36871,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "card",
-  props: ['title']
+  props: {
+    title: {
+      "default": 'test',
+      type: String
+    },
+    titleIcon: {
+      "default": 'icon-drop',
+      type: String
+    }
+  }
 });
 
 /***/ }),
@@ -56868,7 +56877,7 @@ var render = function() {
         "div",
         { staticClass: "row" },
         [
-          _c("card", { attrs: { title: "تست" } }, [
+          _c("card", { attrs: { title: "تست", "title-icon": "icon-user" } }, [
             _c("div", { staticClass: "col-md-4" }, [
               _c("div", { staticClass: "p-3 mb-3 bg-primary" }, [
                 _vm._v("اصلی")
@@ -57165,11 +57174,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
     _c("div", { staticClass: "card-header" }, [
-      _c("i", { staticClass: "icon-drop" }),
+      _c("i", { class: _vm.titleIcon }),
       _vm._v(_vm._s(_vm.title) + "\n    ")
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "card-body" }, [
+    _c("div", { staticClass: "card-body " }, [
       _c("div", { staticClass: "row" }, [_vm._t("default")], 2)
     ])
   ])
