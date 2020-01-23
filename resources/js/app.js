@@ -24,17 +24,28 @@ window.Vue = require('vue');
 import Welcome from "./components/Welcome";
 import User from "./components/User";
 import Dashboard from "./components/Dashboard";
+import BaseCards from "./components/BaseCards";
 import Vue from "vue";
 import App from "./components/App";
-import Sidebar from "./components/side/Sidebar";
 import VueRouter from 'vue-router'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 Vue.use(VueRouter)
+
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'jquery/src/jquery.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 const routes = [
     { path: '/', component: Welcome },
     { path: '/user', component: User },
     { path: '/dashboard', component: Dashboard },
+    { path: '/base-cards', component: BaseCards },
 ]
 
 const router = new VueRouter({

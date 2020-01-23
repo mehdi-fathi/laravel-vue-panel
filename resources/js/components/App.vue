@@ -35,9 +35,10 @@
     import traffic from "./card/traffic";
     import Sidebar from "./side/Sidebar";
     import Breadcrump from "./side/Breadcrump";
+    import SideMenu from "./side/SideMenu";
 
     export default {
-        components: {Breadcrump, Box, CChartLineSimple, CChartBarSimple, socialBox,statBox,traffic,Sidebar},
+        components: {Breadcrump, Box, CChartLineSimple, CChartBarSimple, socialBox,statBox,traffic,Sidebar,SideMenu},
         name: "App",
         props: [
             'bamWam'

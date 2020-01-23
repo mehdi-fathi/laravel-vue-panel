@@ -17,14 +17,18 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
-        "vue": "^2.5.17",
+        "vue": "^2.6.11",
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
         "@coreui/utils": "^1.0.0",
         "@coreui/vue-chartjs": "^1.0.3",
+        "bootstrap": "^4.4.1",
+        "bootstrap-vue": "^2.2.2",
         "gulp": "^4.0.2",
         "highcharts-vue": "^1.3.5",
+        "jquery": "^3.4.1",
+        "popper.js": "^1.16.1",
         "vue-chartjs": "^3.5.0",
         "vue-router": "^3.1.5"
     }

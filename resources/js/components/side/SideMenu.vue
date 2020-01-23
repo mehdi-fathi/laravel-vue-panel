@@ -308,7 +308,7 @@
 
 <script>
     export default {
-        name: "SideMenu.vue"
+        name: "SideMenu"
     }
 </script>
 

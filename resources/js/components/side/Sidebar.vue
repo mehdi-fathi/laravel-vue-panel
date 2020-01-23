@@ -1,6 +1,84 @@
 <template>
     <div>
         <nav class="sidebar-nav">
+            <div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1">
+                <span class="dark-blue-text">ddssdffsdds</span>
+            </button>
+
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-breadcrumb.html"><i class="icon-puzzle"></i> نشانگر صفحات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-cards.html"></a>
+                        <router-link to="/base-cards" class="nav-link">
+                            <i class="icon-puzzle"></i> باکس ها
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-carousel.html"><i class="icon-puzzle"></i> اسلایدر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-collapse.html"><i class="icon-puzzle"></i> باز و بسته
+                            شونده</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-forms.html"><i class="icon-puzzle"></i> فرم ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-jumbotron.html"><i class="icon-puzzle"></i> جامبوترون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-list-group.html"><i class="icon-puzzle"></i> لیست ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-navs.html"><i class="icon-puzzle"></i> ناوبری</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-pagination.html"><i class="icon-puzzle"></i> صفحه بندی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-popovers.html"><i class="icon-puzzle"></i> تولتیپ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-progress.html"><i class="icon-puzzle"></i> پروگرس بار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-switches.html"><i class="icon-puzzle"></i> سویچ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-tables.html"><i class="icon-puzzle"></i> جدول ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-tabs.html"><i class="icon-puzzle"></i> تب ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="base-tooltips.html"><i class="icon-puzzle"></i> تولتیپ ها 2</a>
+                    </li>
+                </ul>
+            </div>
+
+
             <ul class="nav">
                 <li class="nav-item">
                     <router-link to="/dashboard" class="nav-link"><i class="icon-speedometer"></i> داشبورد <span
@@ -23,6 +101,18 @@
                 <li class="nav-title">
                     کامپوننت ها
                 </li>
+
+                    <b-navbar-toggle target="nav_collapse" tag="li">
+                        <b-navbar-nav class="nav-link nav-dropdown-toggle" tag="a" >
+                            <i class="icon-puzzle"></i> کامپوننت های پایه
+                        </b-navbar-nav>
+                    </b-navbar-toggle>
+                    <b-collapse is-nav id="nav_collapse">
+                        <b-navbar-nav>
+                            <b-nav-item href="#">Link</b-nav-item>
+                        </b-navbar-nav>
+                    </b-collapse>
+
                 <li class="nav-item nav-dropdown">
                     <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> کامپوننت های پایه</a>
                     <ul class="nav-dropdown-items">
@@ -30,7 +120,10 @@
                             <a class="nav-link" href="base-breadcrumb.html"><i class="icon-puzzle"></i> نشانگر صفحات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="base-cards.html"><i class="icon-puzzle"></i> باکس ها</a>
+                            <a class="nav-link" href="base-cards.html"></a>
+                            <router-link to="/base-cards" class="nav-link">
+                                <i class="icon-puzzle"></i> باکس ها
+                            </router-link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="base-carousel.html"><i class="icon-puzzle"></i> اسلایدر</a>
@@ -166,9 +259,16 @@
     </div>
 </template>
 <script>
+
+    import 'jquery/src/jquery.js'
+    import 'bootstrap/dist/js/bootstrap.min.js'
     export default {
-        name: "Sidebar"
+        name: 'Sidebar',
+        mounted: function () {
+            postscribe('#gist', `<script src="js/bootstrap.min.js"><\/script>`)
+        }
     }
+</script>
 </script>
 
 <style scoped>
