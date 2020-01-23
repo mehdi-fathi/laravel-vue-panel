@@ -1,6 +1,11 @@
 <template>
     <div class="flex-center position-ref full-height">
         <div class="content">
+            <div class="card-body">
+                Welcome to Homepage
+                <br/>
+                <router-link to="/user">Go to User</router-link>
+            </div>
             <div class="title m-b-md">
                 {{title}}
             </div>

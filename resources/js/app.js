@@ -3,7 +3,6 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-import Dashboard from "./components/Dashboard";
 
 
 require('./bootstrap');
@@ -21,12 +20,26 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('welcome', require('./components/Welcome.vue').default);
-Vue.component('dashboard', require('./components/Dashboard.vue').default);
 
+import Welcome from "./components/Welcome";
+import User from "./components/User";
+import Dashboard from "./components/Dashboard";
+import Vue from "vue";
+import App from "./components/App";
+import Sidebar from "./components/side/Sidebar";
+import VueRouter from 'vue-router'
 
+Vue.use(VueRouter)
 
+const routes = [
+    { path: '/', component: Welcome },
+    { path: '/user', component: User },
+    { path: '/dashboard', component: Dashboard },
+]
+
+const router = new VueRouter({
+    routes
+})
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -36,7 +49,6 @@ Vue.component('dashboard', require('./components/Dashboard.vue').default);
 
 const app = new Vue({
     el: '#app',
-    data: {
-        message: 'You loaded this page on ' + new Date().toLocaleString()
-    }
+    router,               // <-- register router with Vue
+    render: (h) => h(App) // <-- render App component
 });

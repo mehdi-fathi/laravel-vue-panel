@@ -1,20 +1,30 @@
-@extends('layouts.master')
-
-@section('title', 'Page Title')
-
-{{--@section('sidebar')--}}
-{{--    @parent--}}
-{{--    <p>This is appended to the master sidebar.</p>--}}
-{{--@stop--}}
-
-@section('content')
-        <div id="app">
-            <dashboard></dashboard>
-        </div>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    @include('panel.sections.head.head')
+    @stack('styles')
+</head>
 
 
-    <!-- /.conainer-fluid -->
-@stop
-<script>
-    export default
-</script>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+
+<header class="app-header navbar">
+    @include('panel.sections.head.header')
+</header>
+<div id="app">
+
+
+
+
+</div>
+
+<footer class="app-footer">
+    @include('panel.sections.footer.footer')
+</footer>
+
+@include('panel.sections.footer.scripts')
+<script type="text/javascript" src="js/app-vue/app.js"></script>
+@stack('styles')
+
+</body>
+</html>
