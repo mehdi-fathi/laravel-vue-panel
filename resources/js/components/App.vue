@@ -11,15 +11,19 @@
                 <!-- Breadcrumb -->
                 <Breadcrump></Breadcrump>
 
-            <aside class="aside-menu">
-                <!--@include('panel.sections.side.side-menu')-->
-                <SideMenu></SideMenu>
-            </aside>
+                <aside class="aside-menu">
+                    <!--@include('panel.sections.side.side-menu')-->
+                    <SideMenu></SideMenu>
+                </aside>
 
 
-            <main>
-                <router-view></router-view>
-            </main>
+                <main>
+                    <div class="container-fluid">
+                        <div class="animated fadeIn">
+                            <router-view></router-view>
+                        </div>
+                    </div>
+                </main>
 
             </main>
         </div>
@@ -38,7 +42,17 @@
     import SideMenu from "./side/SideMenu";
 
     export default {
-        components: {Breadcrump, Box, CChartLineSimple, CChartBarSimple, socialBox,statBox,traffic,Sidebar,SideMenu},
+        components: {
+            Breadcrump,
+            Box,
+            CChartLineSimple,
+            CChartBarSimple,
+            socialBox,
+            statBox,
+            traffic,
+            Sidebar,
+            SideMenu
+        },
         name: "App",
         props: [
             'bamWam'

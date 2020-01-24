@@ -17,27 +17,12 @@
 </div>
 
 
-
 <footer class="app-footer">
-
-
-
-    <div>
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-        </div>
-    </div>
+    @include('panel.sections.footer.footer')
 </footer>
 
-@include('panel.sections.footer.scripts')
 <script type="text/javascript" src="js/app-vue/app.js"></script>
+@include('panel.sections.footer.scripts')
 @stack('styles')
 
 </body>

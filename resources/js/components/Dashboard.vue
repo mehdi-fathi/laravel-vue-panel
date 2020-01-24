@@ -1,8 +1,5 @@
 <template>
-
-    <div class="container-fluid">
-
-        <div class="animated fadeIn">
+<div>
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
                     <box :classBg="'bg-primary'" :number="4521"
@@ -204,9 +201,7 @@
                 <!--/.col-->
             </div>
             <!--/.row-->
-        </div>
-
-    </div>
+</div>
 </template>
 <script>
     import Box from "./card/box"
