@@ -3,7 +3,7 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-4">
-                <card :title="'عنوان باکس'"  :type="'header'">
+                <card :title="'عنوان باکس'" :type="'header'">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
                     و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
                     کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
@@ -12,7 +12,7 @@
                 </card>
             </div>
             <div class="col-sm-6 col-md-4">
-                <card :title="'عنوان باکس'"  :type="'footer'">
+                <card :title="'عنوان باکس'" :type="'footer'">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
                     و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
                     کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
@@ -33,13 +33,13 @@
                 <card :title="'باکس با سویچ'" :type="'header'">
 
                     <template v-slot:header>
-                    <slot name="header">
-                        <label class="switch switch-sm switch-text switch-info float-left mb-0">
-                            <input type="checkbox" class="switch-input">
-                            <span class="switch-label" data-on="On" data-off="Off"></span>
-                            <span class="switch-handle"></span>
-                        </label>
-                    </slot>
+                        <slot name="header">
+                            <label class="switch switch-sm switch-text switch-info float-left mb-0">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-label" data-on="On" data-off="Off"></span>
+                                <span class="switch-handle"></span>
+                            </label>
+                        </slot>
                     </template>
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
                     و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
@@ -64,7 +64,6 @@
                     ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                 </card>
             </div>
-
 
 
             <div class="col-sm-6 col-md-4">
@@ -220,6 +219,170 @@
                     ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                 </card>
             </div>
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :classBg="'bg-primary'" :footerTitle="'ساختگی'"
+                                     :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :classBg="'bg-success'" :footerTitle="'ساختگی'"
+                                     :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :classBg="'bg-info'" :footerTitle="'ساختگی'"
+                                     :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :classBg="'bg-warning'" :footerTitle="'ساختگی'"
+                                     :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :classBg="'bg-danger'" :footerTitle="'ساختگی'"
+                                     :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <blockquoteComponent :footerTitle="'ساختگی'" :footerText="'لورم ایپسوم متن ساختگی '">
+                    <template v-slot:body>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </template>
+                </blockquoteComponent>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'عنوان باکس\n'" :type="'header'" :card-class="'text-white bg-primary'">
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </card>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'عنوان باکس\n'" :type="'header'" :card-class="'text-white bg-success'">
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </card>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'عنوان باکس\n'" :type="'header'" :card-class="'text-white bg-info'">
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </card>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'عنوان باکس\n'" :type="'header'" :card-class="'text-white bg-danger'">
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </card>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'عنوان باکس\n'" :type="'header'" :card-class="'text-white bg-warning'">
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </card>
+            </div>
+
+
+
+            <div class="col-sm-6 col-md-4">
+                <card :title="'باکس\n'" :type="'header'" :collapse-class="'collapse show'" :collapse-id="'collapseExample'"  >
+                    <template v-slot:header>
+
+                        <div class="card-actions">
+                            <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                            <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                        </div>
+                    </template>
+                        <div class="card-body collapse show" id="collapseExample">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        </div>
+
+                </card>
+            </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">عنوان مدال</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>متن </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                            <button type="button" class="btn btn-primary">ذخیره</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+
+
         </div>
     </div>
 </template>
@@ -230,9 +393,10 @@
     import statBox from "./card/statBox";
     import traffic from "./card/traffic";
     import card from "./card/card";
+    import blockquoteComponent from "./card/blockquoteComponent";
 
     export default {
-        components: {Box, CChartLineSimple, CChartBarSimple, socialBox, statBox, traffic, card},
+        components: {Box, CChartLineSimple, CChartBarSimple, socialBox, statBox, traffic, card, blockquoteComponent},
         name: "BaseCards",
         props: [
             'bamWam'
