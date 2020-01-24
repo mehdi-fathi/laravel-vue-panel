@@ -32,7 +32,6 @@
                             <a class="nav-link" href="base-breadcrumb.html"><i class="icon-puzzle"></i> نشانگر صفحات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="base-cards.html"></a>
                             <router-link to="/base-cards" class="nav-link">
                                 <i class="icon-puzzle"></i> باکس ها
                             </router-link>
@@ -41,8 +40,9 @@
                             <a class="nav-link" href="base-carousel.html"><i class="icon-puzzle"></i> اسلایدر</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="base-collapse.html"><i class="icon-puzzle"></i> باز و بسته
-                                شونده</a>
+
+                            <router-link to="/base-collapse" class="nav-link"><i class="icon-puzzle"></i> باز و بسته
+                                شونده</router-link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="base-forms.html"><i class="icon-puzzle"></i> فرم ها</a>
