@@ -1,33 +1,30 @@
 <template>
-    <div>
 
-        <div class="app-body">
+    <div class="app-body">
 
-            <div class="sidebar">
-                <Sidebar></Sidebar>
-            </div>
-
-            <main class="main">
-                <!-- Breadcrumb -->
-                <Breadcrump></Breadcrump>
-
-                <aside class="aside-menu">
-                    <!--@include('panel.sections.side.side-menu')-->
-                    <SideMenu></SideMenu>
-                </aside>
-
-
-                <main>
-                    <div class="container-fluid">
-                        <div class="animated fadeIn">
-                            <router-view></router-view>
-                        </div>
-                    </div>
-                </main>
-
-            </main>
+        <div class="sidebar">
+            <Sidebar></Sidebar>
         </div>
 
+        <main class="main">
+            <!-- Breadcrumb -->
+            <Breadcrump></Breadcrump>
+
+            <aside class="aside-menu">
+                <!--@include('panel.sections.side.side-menu')-->
+                <SideMenu></SideMenu>
+            </aside>
+
+
+            <main>
+                <div class="container-fluid">
+                    <div class="animated fadeIn">
+                        <router-view></router-view>
+                    </div>
+                </div>
+            </main>
+
+        </main>
     </div>
 </template>
 

@@ -36,209 +36,207 @@ class UsersController extends Controller
                 'icon' => 'icon-pencil',
             ],
             [
-                'type' => 'item',
-                'text' => 'کاربر',
-                'route' => 'users',
-                'icon' => 'icon-speedometer',
+                'type' => 'nav-title',
+                'text' => 'کامپوننت ها',
             ],
             [
                 'type' => 'parent-item',
                 'text' => ' کامپوننت های پایه',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-puzzle',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'نشانگر صفحات',
-                        'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'route' => 'base-breadcrumb',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'باکس ها',
                         'route' => 'base-cards',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'اسلایدر',
-                        'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'route' => 'base-carousel',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'باز و بسته شونده',
-                        'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'route' => 'base-collapse',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'فرم ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'جامبوترون',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'لیست ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'ناوبری',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ], [
                         'type' => 'item',
                         'text' => 'صفحه بندی',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'تولتیپ',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'پروگرس بار',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'سویچ',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'جدول ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'تب ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',
                         'text' => 'تولتیپ ها ۲',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-puzzle',
                     ],
                 ]
             ],[
                 'type' => 'parent-item',
                 'text' => 'دکمه ها',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-cursor',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'دکمه ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-cursor',
                     ],[
                         'type' => 'item',
                         'text' => 'دکمه های گروهی',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-cursor',
                     ],[
                         'type' => 'item',
                         'text' => 'دراپ دان ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-cursor',
                     ],[
                         'type' => 'item',
                         'text' => 'شبکه های اجتماعی',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-cursor',
                     ],
                 ]
             ],[
                 'type' => 'item',
                 'text' => 'چارت ها',
                 'route' => 'users',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-pie-chart',
             ],[
                 'type' => 'parent-item',
                 'text' => 'ایکن ها',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-star',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'پرچم ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],[
                         'type' => 'item',
                         'text' => 'font awesome',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],[
                         'type' => 'item',
                         'text' => 'simple line icons',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],
                 ]
             ],[
                 'type' => 'parent-item',
                 'text' => 'اطلاع رسانی ها',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-bell',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'هشدار ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-bell',
                     ],[
                         'type' => 'item',
                         'text' => 'نشان ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-bell',
                     ],[
                         'type' => 'item',
                         'text' => 'مدال ها',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-bell',
                     ]
                 ]
             ],[
                 'type' => 'item',
                 'text' => 'ویجت ها',
                 'route' => 'users',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-calculator',
                 'label' => [
                     'text' => 'جدید',
                 ]
             ],[
                 'type' => 'parent-item',
                 'text' => 'صفحات',
-                'icon' => 'icon-speedometer',
+                'icon' => 'icon-star',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'ورود',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],[
                         'type' => 'item',
                         'text' => 'ثبت نام',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],[
                         'type' => 'item',
                         'text' => 'خطای 404',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ],[
                         'type' => 'item',
                         'text' => 'خطای 500',
                         'route' => 'users',
-                        'icon' => 'icon-speedometer',
+                        'icon' => 'icon-star',
                     ]
                 ]
             ]

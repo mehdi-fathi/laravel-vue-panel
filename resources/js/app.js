@@ -25,6 +25,8 @@ import Welcome from "./components/Welcome";
 import User from "./components/User";
 import Dashboard from "./components/Dashboard";
 import BaseCards from "./components/BaseCards";
+import BaseBreadcrumb from "./components/BaseBreadcrumb";
+import BaseCarousel from "./components/BaseCarousel";
 import BaseCollapse from "./components/BaseCollapse";
 import Vue from "vue";
 import App from "./components/App";
@@ -45,6 +47,8 @@ const routes = [
     { path: '/user', component: User },
     { path: '/dashboard', component: Dashboard },
     { path: '/base-cards', component: BaseCards },
+    { path: '/base-breadcrumb', component: BaseBreadcrumb },
+    { path: '/base-carousel', component: BaseCarousel },
     { path: '/base-collapse', component: BaseCollapse },
 ]
 
