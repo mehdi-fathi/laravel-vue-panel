@@ -13,7 +13,7 @@
 
 <div class="app-body">
 
-    <div class="sidebar">
+    <div>
         @include('panel.sections.side.sidebar')
     </div>
 

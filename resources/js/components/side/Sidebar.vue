@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="sidebar">
         <nav class="sidebar-nav">
 
             <ul class="nav">
@@ -21,15 +21,12 @@
                             </a>
 
                             <ul class="nav-dropdown-items">
-                                <div v-for="itemSub in item.items">
+                                <li v-for="itemSub in item.items" class="nav-item">
 
-                                    <li class="nav-item">
                                         <router-link :to="itemSub.route" class="nav-link">
                                             <i :class="itemSub.icon"></i> {{ itemSub.text }}
-
                                         </router-link>
-                                    </li>
-                                </div>
+                                </li>
                             </ul>
                         </li>
 

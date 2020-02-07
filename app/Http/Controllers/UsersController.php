@@ -43,13 +43,13 @@ class UsersController extends Controller
             ],
             [
                 'type' => 'parent-item',
-                'text' => 'کامپوننت ها',
+                'text' => ' کامپوننت های پایه',
                 'icon' => 'icon-speedometer',
                 'items' => [
                     [
                         'type' => 'item',
                         'text' => 'نشانگر صفحات',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
@@ -61,72 +61,72 @@ class UsersController extends Controller
                     [
                         'type' => 'item',
                         'text' => 'اسلایدر',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'باز و بسته شونده',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'فرم ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'جامبوترون',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'لیست ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                     [
                         'type' => 'item',
                         'text' => 'ناوبری',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ], [
                         'type' => 'item',
                         'text' => 'صفحه بندی',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'تولتیپ',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'پروگرس بار',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'سویچ',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'جدول ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'تب ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'تولتیپ ها ۲',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                 ]
@@ -138,29 +138,29 @@ class UsersController extends Controller
                     [
                         'type' => 'item',
                         'text' => 'دکمه ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'دکمه های گروهی',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'دراپ دان ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'شبکه های اجتماعی',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                 ]
             ],[
                 'type' => 'item',
                 'text' => 'چارت ها',
-                'route' => 'dashboard',
+                'route' => 'users',
                 'icon' => 'icon-speedometer',
             ],[
                 'type' => 'parent-item',
@@ -170,17 +170,17 @@ class UsersController extends Controller
                     [
                         'type' => 'item',
                         'text' => 'پرچم ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'font awesome',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'simple line icons',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],
                 ]
@@ -192,24 +192,24 @@ class UsersController extends Controller
                     [
                         'type' => 'item',
                         'text' => 'هشدار ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'نشان ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'مدال ها',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ]
                 ]
             ],[
                 'type' => 'item',
                 'text' => 'ویجت ها',
-                'route' => 'dashboard',
+                'route' => 'users',
                 'icon' => 'icon-speedometer',
                 'label' => [
                     'text' => 'جدید',
@@ -222,22 +222,22 @@ class UsersController extends Controller
                     [
                         'type' => 'item',
                         'text' => 'ورود',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'ثبت نام',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'خطای 404',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ],[
                         'type' => 'item',
                         'text' => 'خطای 500',
-                        'route' => 'dashboard',
+                        'route' => 'users',
                         'icon' => 'icon-speedometer',
                     ]
                 ]

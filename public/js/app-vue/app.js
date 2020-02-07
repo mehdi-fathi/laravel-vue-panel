@@ -39643,9 +39643,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Sidebar',
   data: function data() {
@@ -75980,7 +75977,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "sidebar" }, [
     _c("nav", { staticClass: "sidebar-nav" }, [
       _c(
         "ul",
@@ -76043,30 +76040,28 @@ var render = function() {
                       "ul",
                       { staticClass: "nav-dropdown-items" },
                       _vm._l(item.items, function(itemSub) {
-                        return _c("div", [
-                          _c(
-                            "li",
-                            { staticClass: "nav-item" },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: itemSub.route }
-                                },
-                                [
-                                  _c("i", { class: itemSub.icon }),
-                                  _vm._v(
-                                    " " +
-                                      _vm._s(itemSub.text) +
-                                      "\n\n                                    "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ])
+                        return _c(
+                          "li",
+                          { staticClass: "nav-item" },
+                          [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: itemSub.route }
+                              },
+                              [
+                                _c("i", { class: itemSub.icon }),
+                                _vm._v(
+                                  " " +
+                                    _vm._s(itemSub.text) +
+                                    "\n                                    "
+                                )
+                              ]
+                            )
+                          ],
+                          1
+                        )
                       }),
                       0
                     )
