@@ -39,6 +39,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import JQuery from 'jquery'
 window.$ = JQuery
 
+
 const routes = [
     { path: '/', component: Welcome },
     { path: '/user', component: User },
