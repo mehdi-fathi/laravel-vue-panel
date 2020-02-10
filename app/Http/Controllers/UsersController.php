@@ -32,7 +32,7 @@ class UsersController extends Controller
             [
                 'type' => 'item',
                 'text' => 'تایپوگرافی',
-                'route' => 'users',
+                'route' => 'users2',
                 'icon' => 'icon-pencil',
             ],
             [

@@ -36538,8 +36538,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -39722,6 +39720,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -71475,31 +71474,36 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "app-body" }, [
-    _c("div", { staticClass: "sidebar" }, [_c("Sidebar")], 1),
-    _vm._v(" "),
-    _c(
-      "main",
-      { staticClass: "main" },
-      [
-        _c("Breadcrump"),
-        _vm._v(" "),
-        _c("aside", { staticClass: "aside-menu" }, [_c("SideMenu")], 1),
-        _vm._v(" "),
-        _c("main", [
-          _c("div", { staticClass: "container-fluid" }, [
-            _c(
-              "div",
-              { staticClass: "animated fadeIn" },
-              [_c("router-view")],
-              1
-            )
+  return _c(
+    "div",
+    { staticClass: "app-body" },
+    [
+      _c("Sidebar"),
+      _vm._v(" "),
+      _c(
+        "main",
+        { staticClass: "main" },
+        [
+          _c("Breadcrump"),
+          _vm._v(" "),
+          _c("aside", { staticClass: "aside-menu" }, [_c("SideMenu")], 1),
+          _vm._v(" "),
+          _c("main", [
+            _c("div", { staticClass: "container-fluid" }, [
+              _c(
+                "div",
+                { staticClass: "animated fadeIn" },
+                [_c("router-view")],
+                1
+              )
+            ])
           ])
-        ])
-      ],
-      1
-    )
-  ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -76993,7 +76997,7 @@ var render = function() {
                                 _vm._v(
                                   " " +
                                     _vm._s(itemSub.text) +
-                                    "\n                                    "
+                                    "\n                                "
                                 )
                               ]
                             )
@@ -92200,7 +92204,9 @@ var routes = [{
   component: _components_BaseCollapse__WEBPACK_IMPORTED_MODULE_6__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_9__["default"]({
-  routes: routes
+  routes: routes,
+  linkActiveClass: "active",
+  linkExactActiveClass: "exact-active"
 });
 /**
  * Next, we will create a fresh Vue application instance and attach it to

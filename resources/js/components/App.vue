@@ -2,9 +2,7 @@
 
     <div class="app-body">
 
-        <div class="sidebar">
             <Sidebar></Sidebar>
-        </div>
 
         <main class="main">
             <!-- Breadcrumb -->

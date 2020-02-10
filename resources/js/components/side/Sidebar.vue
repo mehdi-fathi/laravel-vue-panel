@@ -6,7 +6,8 @@
                 <div v-for="item in menu">
                     <div v-if="item.type === 'item'">
                         <li class="nav-item">
-                            <router-link :to="item.route" class="nav-link"><i :class="item.icon"></i> {{ item.text }}
+                            <router-link :to="item.route" class="nav-link">
+                                <i :class="item.icon"></i> {{ item.text }}
                                 <span v-if="item.label" class="badge badge-primary">
                             {{ item.label.text }}
                     </span>
@@ -21,11 +22,11 @@
                             </a>
 
                             <ul class="nav-dropdown-items">
-                                <li v-for="itemSub in item.items" class="nav-item">
+                                <li v-for="itemSub in item.items" class="nav-item" >
 
-                                        <router-link :to="itemSub.route" class="nav-link">
-                                            <i :class="itemSub.icon"></i> {{ itemSub.text }}
-                                        </router-link>
+                                    <router-link :to="itemSub.route" class="nav-link">
+                                        <i :class="itemSub.icon"></i> {{ itemSub.text }}
+                                    </router-link>
                                 </li>
                             </ul>
                         </li>
