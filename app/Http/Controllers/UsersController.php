@@ -114,7 +114,7 @@ class UsersController extends Controller
                     ],[
                         'type' => 'item',
                         'text' => 'جدول ها',
-                        'route' => 'users',
+                        'route' => 'base-tables',
                         'icon' => 'icon-puzzle',
                     ],[
                         'type' => 'item',

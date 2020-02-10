@@ -28,6 +28,7 @@ import BaseCards from "./components/BaseCards";
 import BaseBreadcrumb from "./components/BaseBreadcrumb";
 import BaseCarousel from "./components/BaseCarousel";
 import BaseCollapse from "./components/BaseCollapse";
+import BaseTables from "./components/BaseTables";
 import Vue from "vue";
 import App from "./components/App";
 import VueRouter from 'vue-router'
@@ -50,6 +51,7 @@ const routes = [
     { path: '/base-breadcrumb', component: BaseBreadcrumb },
     { path: '/base-carousel', component: BaseCarousel },
     { path: '/base-collapse', component: BaseCollapse },
+    { path: '/base-tables', component: BaseTables },
 ]
 
 const router = new VueRouter({

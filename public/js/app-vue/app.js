@@ -37493,6 +37493,345 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BaseTables.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BaseTables.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _tables_table__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tables/table */ "./resources/js/components/tables/table.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Table: _tables_table__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  name: "BaseTables",
+  props: ['bamWam'],
+  data: function data() {
+    return {
+      "data": {
+        "head": ["name"],
+        "body": ["mehdi", "ali", "ahmad"]
+      }
+    };
+  },
+  created: function created() {
+    console.log(this.bamWam);
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Dashboard.vue?vue&type=script&lang=js& ***!
@@ -39768,88 +40107,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Sidebar',
+  data: function data() {
+    return {
+      menu: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('http://127.0.0.1:8000/users/menu').then(function (response) {
+      return _this.menu = response.data;
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tables/table.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tables/table.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -39934,18 +40218,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Sidebar',
-  data: function data() {
-    return {
-      menu: null
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get('http://127.0.0.1:8000/users/menu').then(function (response) {
-      return _this.menu = response.data;
-    });
+  name: "table",
+  props: {
+    score: {
+      type: Array,
+      required: true
+    }
   }
 });
 
@@ -73515,6 +73793,615 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "animated fadeIn" }, [
+    _c(
+      "div",
+      { staticClass: "row" },
+      [_c("Table", { attrs: { score: _vm.data } }), _vm._v(" "), _vm._m(0)],
+      1
+    ),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-6" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("i", { staticClass: "fa fa-align-justify" }),
+          _vm._v(" جدول راه راه\n                ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _c(
+            "table",
+            { staticClass: "table table-responsive-sm table-striped" },
+            [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("نام کاربری")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("تاریخ ثبت")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("نقش")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("وضعیت")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("رضا حسینی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/01/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Member")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-success" }, [
+                      _vm._v("فعال")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("رضا اکبری")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/02/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Staff")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-danger" }, [
+                      _vm._v("Banned")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("محمد حسینی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/02/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Admin")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-secondary" }, [
+                      _vm._v("غیر فعال")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("مهدی خیری")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/03/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Member")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-warning" }, [
+                      _vm._v("معلق")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("عباس امیری")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/01/21")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Staff")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-success" }, [
+                      _vm._v("فعال")
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("ul", { staticClass: "pagination" }, [
+            _c("li", { staticClass: "page-item" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("قبلی")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item active" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("1")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("2")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("3")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("4")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "page-item" }, [
+              _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                _vm._v("بعدی")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-6" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _c("i", { staticClass: "fa fa-align-justify" }),
+            _vm._v(" جدول\n                ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("table", { staticClass: "table table-responsive-sm table-sm" }, [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("نام کاربری")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("تاریخ ثبت")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("نقش")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("وضعیت")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("اکبر ایمانی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/01/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Member")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-success" }, [
+                      _vm._v("فعال")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("نعیمه موسوی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/02/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Staff")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-danger" }, [
+                      _vm._v("Banned")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("محمد علوی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/02/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Admin")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-secondary" }, [
+                      _vm._v("غیر فعال")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("هوتن مختاری")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/03/01")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Member")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-warning" }, [
+                      _vm._v("معلق")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("رضا یونسی")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("2012/01/21")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Staff")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "badge badge-success" }, [
+                      _vm._v("فعال")
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "pagination" }, [
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("قبلی")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item active" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("1")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("2")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("3")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("4")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("بعدی")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-6" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _c("i", { staticClass: "fa fa-align-justify" }),
+            _vm._v(" بردر جدول\n                ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "table",
+              { staticClass: "table table-responsive-sm table-bordered" },
+              [
+                _c("thead", [
+                  _c("tr", [
+                    _c("th", [_vm._v("نام کاربری")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("تاریخ ثبت")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("نقش")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("وضعیت")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("رامیت رضاییان")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/01/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Member")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-success" }, [
+                        _vm._v("فعال")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("فاطمه نازینین")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/02/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Staff")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-danger" }, [
+                        _vm._v("Banned")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("مهدوکیا")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/02/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Admin")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-secondary" }, [
+                        _vm._v("غیر فعال")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("سارا هدوی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/03/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Member")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-warning" }, [
+                        _vm._v("معلق")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("مجتبی علوی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/01/21")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Staff")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-success" }, [
+                        _vm._v("فعال")
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("ul", { staticClass: "pagination" }, [
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("قبلی")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item active" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("1")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("2")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("3")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("4")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "page-item" }, [
+                _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                  _vm._v("بعدی")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-12" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _c("i", { staticClass: "fa fa-align-justify" }),
+            _vm._v(" جدول ترکیبی\n                ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "table",
+              {
+                staticClass:
+                  "table table-responsive-sm table-bordered table-striped table-sm"
+              },
+              [
+                _c("thead", [
+                  _c("tr", [
+                    _c("th", [_vm._v("نام کاربری")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("تاریخ ثبت")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("نقش")]),
+                    _vm._v(" "),
+                    _c("th", [_vm._v("وضعیت")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("محمود کریمی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/01/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Member")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-success" }, [
+                        _vm._v("فعال")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("رضا یونسی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/02/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Staff")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-danger" }, [
+                        _vm._v("Banned")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("مرتضی ساجدی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/02/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Admin")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-secondary" }, [
+                        _vm._v("غیر فعال")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("مرتضی ساجدی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/03/01")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Member")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-warning" }, [
+                        _vm._v("معلق")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("محمود کریمی")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("2012/01/21")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Staff")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("span", { staticClass: "badge badge-success" }, [
+                        _vm._v("فعال")
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("nav", [
+              _c("ul", { staticClass: "pagination" }, [
+                _c("li", { staticClass: "page-item" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("قبلی")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item active" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("1")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("2")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("3")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("4")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item" }, [
+                  _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+                    _vm._v("بعدی")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9&":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Dashboard.vue?vue&type=template&id=040e2ab9& ***!
@@ -77033,6 +77920,189 @@ var render = function() {
   ])
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "col-lg-6" }, [
+    _c("div", { staticClass: "card" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "card-body" },
+        [
+          _vm._m(1),
+          _vm._v("\n            ds\n            "),
+          _vm._l(_vm.score.head, function(item) {
+            return _c("div", [_c("span", [_vm._v(_vm._s(item))])])
+          }),
+          _vm._v(" "),
+          _vm._l(_vm.score.body, function(item) {
+            return _c("div", [_c("span", [_vm._v(_vm._s(item))])])
+          }),
+          _vm._v(" "),
+          _vm._m(2)
+        ],
+        2
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("i", { staticClass: "fa fa-align-justify" }),
+      _vm._v(" جدول ساده\n        ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("table", { staticClass: "table table-responsive-sm" }, [
+      _c("thead", [
+        _c("tr", [
+          _c("th", [_vm._v("نام کاربری")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("تاریخ ثبت")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("نقش")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("وضعیت")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("tbody", [
+        _c("tr", [
+          _c("td", [_vm._v("محمد نوری")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2012/01/01")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Member")]),
+          _vm._v(" "),
+          _c("td", [
+            _c("span", { staticClass: "badge badge-success" }, [_vm._v("فعال")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("رضا یونسی")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2012/02/01")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Staff")]),
+          _vm._v(" "),
+          _c("td", [
+            _c("span", { staticClass: "badge badge-danger" }, [
+              _vm._v("Banned")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("یاسر عبدلهی")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2012/02/01")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Admin")]),
+          _vm._v(" "),
+          _c("td", [
+            _c("span", { staticClass: "badge badge-secondary" }, [
+              _vm._v("غیر فعال")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("محسن عزیزی")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2012/03/01")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Member")]),
+          _vm._v(" "),
+          _c("td", [
+            _c("span", { staticClass: "badge badge-warning" }, [_vm._v("معلق")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v("حسین محمدی")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2012/01/21")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Staff")]),
+          _vm._v(" "),
+          _c("td", [
+            _c("span", { staticClass: "badge badge-success" }, [_vm._v("فعال")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "pagination" }, [
+      _c("li", { staticClass: "page-item" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("قبلی")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "page-item active" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("1")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "page-item" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("2")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "page-item" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("3")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "page-item" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("4")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "page-item" }, [
+        _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
+          _vm._v("بعدی")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -92139,14 +93209,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_BaseBreadcrumb__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/BaseBreadcrumb */ "./resources/js/components/BaseBreadcrumb.vue");
 /* harmony import */ var _components_BaseCarousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/BaseCarousel */ "./resources/js/components/BaseCarousel.vue");
 /* harmony import */ var _components_BaseCollapse__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/BaseCollapse */ "./resources/js/components/BaseCollapse.vue");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.vue");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap.min.js */ "./node_modules/bootstrap/dist/js/bootstrap.min.js");
-/* harmony import */ var bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_BaseTables__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/BaseTables */ "./resources/js/components/BaseTables.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.vue");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bootstrap/dist/js/bootstrap.min.js */ "./node_modules/bootstrap/dist/js/bootstrap.min.js");
+/* harmony import */ var bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_min_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_12__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -92174,13 +93245,14 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 
+
  // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
-vue__WEBPACK_IMPORTED_MODULE_7___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_9__["default"]); // import 'bootstrap/dist/css/bootstrap.min.css'
+vue__WEBPACK_IMPORTED_MODULE_8___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_10__["default"]); // import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-window.$ = jquery__WEBPACK_IMPORTED_MODULE_11___default.a;
+window.$ = jquery__WEBPACK_IMPORTED_MODULE_12___default.a;
 var routes = [{
   path: '/',
   component: _components_Welcome__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -92202,8 +93274,11 @@ var routes = [{
 }, {
   path: '/base-collapse',
   component: _components_BaseCollapse__WEBPACK_IMPORTED_MODULE_6__["default"]
+}, {
+  path: '/base-tables',
+  component: _components_BaseTables__WEBPACK_IMPORTED_MODULE_7__["default"]
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_9__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_10__["default"]({
   routes: routes,
   linkActiveClass: "active",
   linkExactActiveClass: "exact-active"
@@ -92214,12 +93289,12 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_9__["default"]({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_7___default.a({
+var app = new vue__WEBPACK_IMPORTED_MODULE_8___default.a({
   el: '#app',
   router: router,
   // <-- register router with Vue
   render: function render(h) {
-    return h(_components_App__WEBPACK_IMPORTED_MODULE_8__["default"]);
+    return h(_components_App__WEBPACK_IMPORTED_MODULE_9__["default"]);
   } // <-- render App component
 
 });
@@ -92598,6 +93673,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseCollapse_vue_vue_type_template_id_4ac8baee___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseCollapse_vue_vue_type_template_id_4ac8baee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/BaseTables.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/BaseTables.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BaseTables.vue?vue&type=template&id=9930fb7e& */ "./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e&");
+/* harmony import */ var _BaseTables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BaseTables.vue?vue&type=script&lang=js& */ "./resources/js/components/BaseTables.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _BaseTables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/BaseTables.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/BaseTables.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/BaseTables.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseTables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./BaseTables.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BaseTables.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseTables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./BaseTables.vue?vue&type=template&id=9930fb7e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BaseTables.vue?vue&type=template&id=9930fb7e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseTables_vue_vue_type_template_id_9930fb7e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -94041,6 +95185,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_template_id_55267762_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_template_id_55267762_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/tables/table.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/tables/table.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./table.vue?vue&type=template&id=4438dd6f& */ "./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f&");
+/* harmony import */ var _table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./table.vue?vue&type=script&lang=js& */ "./resources/js/components/tables/table.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/tables/table.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/tables/table.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/tables/table.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./table.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tables/table.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_table_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./table.vue?vue&type=template&id=4438dd6f& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tables/table.vue?vue&type=template&id=4438dd6f&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_table_vue_vue_type_template_id_4438dd6f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
