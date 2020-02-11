@@ -3,7 +3,7 @@
     <div class="animated fadeIn">
         <div class="row">
             <!--d-->
-            <Table :score="data"></Table>
+            <Table :data="data" label></Table>
             <!--/.col-->
             <div class="col-lg-6">
                 <div class="card">
@@ -316,14 +316,24 @@
         ],
         data() {
             return {
-                "data": {
-                    "head": ["name"],
-                    "body": ["mehdi","ali","ahmad"],
+                data: {
+                    "head": [
+                        'نام',
+                        'نام خانوادگی',
+                        'تعداد پست',
+                        'وضعیت'
+                    ],
+                    "body": [],
                 }
             }
         },
         created() {
             console.log(this.bamWam);
+        },
+        mounted() {
+            axios
+                .get('http://127.0.0.1:8000/users/table')
+                .then(response => (this.data.body = response.data))
         }
     }
 </script>

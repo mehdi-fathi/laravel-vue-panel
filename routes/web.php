@@ -21,4 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('users/menu', 'UsersController@menu')->name('menu');
+Route::get('users/table', 'UsersController@table')->name('table');
 

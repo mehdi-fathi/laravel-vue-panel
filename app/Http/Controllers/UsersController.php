@@ -96,39 +96,39 @@ class UsersController extends Controller
                         'text' => 'صفحه بندی',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'تولتیپ',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'پروگرس بار',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'سویچ',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'جدول ها',
                         'route' => 'base-tables',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'تب ها',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'تولتیپ ها ۲',
                         'route' => 'users',
                         'icon' => 'icon-puzzle',
                     ],
                 ]
-            ],[
+            ], [
                 'type' => 'parent-item',
                 'text' => 'دکمه ها',
                 'icon' => 'icon-cursor',
@@ -138,29 +138,29 @@ class UsersController extends Controller
                         'text' => 'دکمه ها',
                         'route' => 'users',
                         'icon' => 'icon-cursor',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'دکمه های گروهی',
                         'route' => 'users',
                         'icon' => 'icon-cursor',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'دراپ دان ها',
                         'route' => 'users',
                         'icon' => 'icon-cursor',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'شبکه های اجتماعی',
                         'route' => 'users',
                         'icon' => 'icon-cursor',
                     ],
                 ]
-            ],[
+            ], [
                 'type' => 'item',
                 'text' => 'چارت ها',
                 'route' => 'users',
                 'icon' => 'icon-pie-chart',
-            ],[
+            ], [
                 'type' => 'parent-item',
                 'text' => 'ایکن ها',
                 'icon' => 'icon-star',
@@ -170,19 +170,19 @@ class UsersController extends Controller
                         'text' => 'پرچم ها',
                         'route' => 'users',
                         'icon' => 'icon-star',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'font awesome',
                         'route' => 'users',
                         'icon' => 'icon-star',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'simple line icons',
                         'route' => 'users',
                         'icon' => 'icon-star',
                     ],
                 ]
-            ],[
+            ], [
                 'type' => 'parent-item',
                 'text' => 'اطلاع رسانی ها',
                 'icon' => 'icon-bell',
@@ -192,19 +192,19 @@ class UsersController extends Controller
                         'text' => 'هشدار ها',
                         'route' => 'users',
                         'icon' => 'icon-bell',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'نشان ها',
                         'route' => 'users',
                         'icon' => 'icon-bell',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'مدال ها',
                         'route' => 'users',
                         'icon' => 'icon-bell',
                     ]
                 ]
-            ],[
+            ], [
                 'type' => 'item',
                 'text' => 'ویجت ها',
                 'route' => 'users',
@@ -212,7 +212,7 @@ class UsersController extends Controller
                 'label' => [
                     'text' => 'جدید',
                 ]
-            ],[
+            ], [
                 'type' => 'parent-item',
                 'text' => 'صفحات',
                 'icon' => 'icon-star',
@@ -222,17 +222,17 @@ class UsersController extends Controller
                         'text' => 'ورود',
                         'route' => 'users',
                         'icon' => 'icon-star',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'ثبت نام',
                         'route' => 'users',
                         'icon' => 'icon-star',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'خطای 404',
                         'route' => 'users',
                         'icon' => 'icon-star',
-                    ],[
+                    ], [
                         'type' => 'item',
                         'text' => 'خطای 500',
                         'route' => 'users',
@@ -243,5 +243,25 @@ class UsersController extends Controller
         ];
 
         return response()->json($list_menu);
+    }
+
+    public function table()
+    {
+        $list = [
+            [
+                'id' => 1,
+                'name' => 'mehdi',
+                'family' => 'fathi',
+                'post_cnt' => 98
+            ],
+            [
+                'id' => 2,
+                'name' => 'ali',
+                'family' => 'ahmadi',
+                'post_cnt' => 988
+            ]
+        ];
+
+        return response()->json($list);
     }
 }

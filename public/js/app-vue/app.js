@@ -37819,14 +37819,21 @@ __webpack_require__.r(__webpack_exports__);
   props: ['bamWam'],
   data: function data() {
     return {
-      "data": {
-        "head": ["name"],
-        "body": ["mehdi", "ali", "ahmad"]
+      data: {
+        "head": ['نام', 'نام خانوادگی', 'تعداد پست', 'وضعیت'],
+        "body": []
       }
     };
   },
   created: function created() {
     console.log(this.bamWam);
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('http://127.0.0.1:8000/users/table').then(function (response) {
+      return _this.data.body = response.data;
+    });
   }
 });
 
@@ -40183,44 +40190,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "table",
   props: {
-    score: {
+    label: {
+      type: Boolean
+    },
+    data: {
       type: Array,
       required: true
     }
@@ -73812,7 +73788,11 @@ var render = function() {
     _c(
       "div",
       { staticClass: "row" },
-      [_c("Table", { attrs: { score: _vm.data } }), _vm._v(" "), _vm._m(0)],
+      [
+        _c("Table", { attrs: { data: _vm.data, label: "" } }),
+        _vm._v(" "),
+        _vm._m(0)
+      ],
       1
     ),
     _vm._v(" "),
@@ -77949,17 +77929,53 @@ var render = function() {
         "div",
         { staticClass: "card-body" },
         [
-          _vm._m(1),
-          _vm._v("\n            ds\n            "),
-          _vm._l(_vm.score.head, function(item) {
+          _c("table", { staticClass: "table table-responsive-sm" }, [
+            _c("thead", [
+              _c(
+                "tr",
+                _vm._l(_vm.data.head, function(item) {
+                  return _c("th", [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(item) +
+                        "\n                    "
+                    )
+                  ])
+                }),
+                0
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "tbody",
+              _vm._l(_vm.data.body, function(item) {
+                return _c("tr", [
+                  _c("td", [_vm._v(_vm._s(item.id))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.name))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.family))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(item.post_cnt))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm.label
+                      ? _c("span", { staticClass: "badge badge-success" }, [
+                          _vm._v("فعال")
+                        ])
+                      : _vm._e()
+                  ])
+                ])
+              }),
+              0
+            )
+          ]),
+          _vm._v(" "),
+          _vm._l(_vm.score, function(item) {
             return _c("div", [_c("span", [_vm._v(_vm._s(item))])])
           }),
           _vm._v(" "),
-          _vm._l(_vm.score.body, function(item) {
-            return _c("div", [_c("span", [_vm._v(_vm._s(item))])])
-          }),
-          _vm._v(" "),
-          _vm._m(2)
+          _vm._m(1)
         ],
         2
       )
@@ -77974,90 +77990,6 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fa fa-align-justify" }),
       _vm._v(" جدول ساده\n        ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("table", { staticClass: "table table-responsive-sm" }, [
-      _c("thead", [
-        _c("tr", [
-          _c("th", [_vm._v("نام کاربری")]),
-          _vm._v(" "),
-          _c("th", [_vm._v("تاریخ ثبت")]),
-          _vm._v(" "),
-          _c("th", [_vm._v("نقش")]),
-          _vm._v(" "),
-          _c("th", [_vm._v("وضعیت")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("tbody", [
-        _c("tr", [
-          _c("td", [_vm._v("محمد نوری")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("2012/01/01")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Member")]),
-          _vm._v(" "),
-          _c("td", [
-            _c("span", { staticClass: "badge badge-success" }, [_vm._v("فعال")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", [_vm._v("رضا یونسی")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("2012/02/01")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Staff")]),
-          _vm._v(" "),
-          _c("td", [
-            _c("span", { staticClass: "badge badge-danger" }, [
-              _vm._v("Banned")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", [_vm._v("یاسر عبدلهی")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("2012/02/01")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Admin")]),
-          _vm._v(" "),
-          _c("td", [
-            _c("span", { staticClass: "badge badge-secondary" }, [
-              _vm._v("غیر فعال")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", [_vm._v("محسن عزیزی")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("2012/03/01")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Member")]),
-          _vm._v(" "),
-          _c("td", [
-            _c("span", { staticClass: "badge badge-warning" }, [_vm._v("معلق")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", [_vm._v("حسین محمدی")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("2012/01/21")]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Staff")]),
-          _vm._v(" "),
-          _c("td", [
-            _c("span", { staticClass: "badge badge-success" }, [_vm._v("فعال")])
-          ])
-        ])
-      ])
     ])
   },
   function() {
